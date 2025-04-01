@@ -72,6 +72,7 @@ body{
 }
 
 .btn{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,6 +82,7 @@ body{
     background-color: #1b1b1b;
     color: #fff;
     transition: all 460ms var(--btn1-tf);
+    overflow: hidden;
     -webkit-transition: all 460ms var(--btn1-tf);
     -moz-transition: all 460ms var(--btn1-tf);
     -ms-transition: all 460ms var(--btn1-tf);
@@ -92,4 +94,40 @@ body{
     color: #1b1b1b;
     border: 1px solid #1b1b1b;
     box-shadow: 4px 4px 0 #1b1b1b;
+}
+
+.btn2:hover .btn2-overlay{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.btn2-overlay{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1px;
+    background-color: #fff;
+    color: #1b1b1b;
+    border-top: 1px solid #1b1b1b;
+    border-bottom: 1px solid #1b1b1b;
+    transform: translateX(-140px);
+    transition: all 180ms var(--btn2-tf);
+    -webkit-transform: translateX(-140px);
+    -moz-transform: translateX(-140px);
+    -ms-transform: translateX(-140px);
+    -o-transform: translateX(-140px);
+    -webkit-transition: all 180ms var(--btn2-tf);
+    -moz-transition: all 180ms var(--btn2-tf);
+    -ms-transition: all 180ms var(--btn2-tf);
+    -o-transition: all 180ms var(--btn2-tf);
+}
+
+.btn2-overlay svg{
+    width: 20px;
+    height: 20px;
 }
