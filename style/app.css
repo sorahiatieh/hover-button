@@ -275,3 +275,45 @@ body{
 .btn4-overlay:hover::before{
     width: 25px;
 }
+
+.btn5{
+    border: 1px solid #1b1b1b;
+    background-color: #fff;
+    color: #1b1b1b;
+}
+
+.btn5::after{
+    content: "";
+    width: 25px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #1b1b1b;
+    position: absolute;
+    left: -25px;
+    bottom: -25px;
+    transition: all 500ms var(--btn5-tf);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-transition: all 500ms var(--btn5-tf);
+    -moz-transition: all 500ms var(--btn5-tf);
+    -ms-transition: all 500ms var(--btn5-tf);
+    -o-transition: all 500ms var(--btn5-tf);
+}
+
+.btn5:hover{
+    color: #fff;
+}
+
+.btn5:hover::after{
+    transform: scale(15);
+    -webkit-transform: scale(15);
+    -moz-transform: scale(15);
+    -ms-transform: scale(15);
+    -o-transform: scale(15);
+}
+
+.btn5-overlay{
+    z-index: 2;
+}
