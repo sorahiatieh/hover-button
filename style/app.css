@@ -131,3 +131,75 @@ body{
     width: 20px;
     height: 20px;
 }
+
+.btn3{
+    background-color: #fff;
+}
+
+.btn3::after,
+.btn3::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 0;
+    display: block;
+    background-color: #1b1b1b;
+    transition: all 500ms var(--btn3-tf);
+    -webkit-transition: all 500ms var(--btn3-tf);
+    -moz-transition: all 500ms var(--btn3-tf);
+    -ms-transition: all 500ms var(--btn3-tf);
+    -o-transition: all 500ms var(--btn3-tf);
+}
+
+.btn3::after{
+    right: 0;
+    bottom: 0;
+}
+
+.btn3::before{
+    left: 0;
+    top: 0;
+}
+
+.btn3:hover::after,
+.btn3:hover::before{
+    height: 100%;
+}
+
+.btn3-overlay{
+    color: #1b1b1b;
+    display: block;
+    position: absolute;
+    inset: 0;
+    line-height: 50px;
+}
+
+.btn3-overlay::after,
+.btn3-overlay::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    display: block;
+    background-color: #1b1b1b;
+    transition: all 500ms var(--btn3-tf);
+    -webkit-transition: all 500ms var(--btn3-tf);
+    -moz-transition: all 500ms var(--btn3-tf);
+    -ms-transition: all 500ms var(--btn3-tf);
+    -o-transition: all 500ms var(--btn3-tf);
+}
+
+.btn3-overlay::after{
+    left: 0;
+    top: 0;
+}
+
+.btn3-overlay::before{
+    right: 0;
+    bottom: 0;
+}
+
+.btn3-overlay:hover::after,
+.btn3-overlay:hover::before{
+    width: 100%;
+}
