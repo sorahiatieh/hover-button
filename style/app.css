@@ -182,11 +182,11 @@ body{
     height: 1px;
     display: block;
     background-color: #1b1b1b;
-    transition: all 500ms var(--btn3-tf);
-    -webkit-transition: all 500ms var(--btn3-tf);
-    -moz-transition: all 500ms var(--btn3-tf);
-    -ms-transition: all 500ms var(--btn3-tf);
-    -o-transition: all 500ms var(--btn3-tf);
+    transition: all 500ms var(--btn3-tf) 500ms;
+    -webkit-transition: all 500ms var(--btn3-tf) 500ms;
+    -moz-transition: all 500ms var(--btn3-tf) 500ms;
+    -ms-transition: all 500ms var(--btn3-tf) 500ms;
+    -o-transition: all 500ms var(--btn3-tf) 500ms;
 }
 
 .btn3-overlay::after{
@@ -202,4 +202,76 @@ body{
 .btn3-overlay:hover::after,
 .btn3-overlay:hover::before{
     width: 100%;
+}
+
+.btn4{
+    background-color: #fff;
+}
+
+.btn4::after,
+.btn4::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 0;
+    display: block;
+    background-color: #1b1b1b;
+    transition: all 160ms var(--btn4-tf);
+    -webkit-transition: all 160ms var(--btn4-tf);
+    -moz-transition: all 160ms var(--btn4-tf);
+    -ms-transition: all 160ms var(--btn4-tf);
+    -o-transition: all 160ms var(--btn4-tf);
+}
+
+.btn4::after{
+    right: 0;
+    bottom: 0;
+}
+
+.btn4::before{
+    left: 0;
+    top: 0;
+}
+
+.btn4:hover::after,
+.btn4:hover::before{
+    height: 25px;
+}
+
+.btn4-overlay{
+    color: #1b1b1b;
+    display: block;
+    position: absolute;
+    inset: 0;
+    line-height: 50px;
+}
+
+.btn4-overlay::after,
+.btn4-overlay::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    display: block;
+    background-color: #1b1b1b;
+    transition: all 160ms var(--btn4-tf) ;
+    -webkit-transition: all 160ms var(--btn4-tf) ;
+    -moz-transition: all 160ms var(--btn4-tf) ;
+    -ms-transition: all 160ms var(--btn4-tf) ;
+    -o-transition: all 160ms var(--btn4-tf) ;
+}
+
+.btn4-overlay::after{
+    left: 0;
+    top: 0;
+}
+
+.btn4-overlay::before{
+    right: 0;
+    bottom: 0;
+}
+
+.btn4-overlay:hover::after,
+.btn4-overlay:hover::before{
+    width: 25px;
 }
